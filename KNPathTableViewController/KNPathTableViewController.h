@@ -27,25 +27,32 @@
 #define KNPathTableOverlayDefaultSize    CGSizeMake(150, 32)
 
 @interface KNPathTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
-  UIView * __infoPanel;
-  CGSize   __infoPanelSize;
-  CGRect   __infoPanelInitialFrame;
-  CGFloat  __initalScrollIndicatorHeight;
-  UITableView * __tableView;
+    UIView *__infoPanel;
+    CGSize __infoPanelSize;
+    CGRect __infoPanelInitialFrame;
+    CGFloat __initalScrollIndicatorHeight;
+    UITableView *__tableView;
+    UITableViewStyle __tableViewStyle;
 }
 
-@property (nonatomic,readonly) UIView * infoPanel;
-@property (nonatomic,readonly) UITableView * tableView;
+@property(nonatomic, readonly) UIView *infoPanel;
+@property(nonatomic, readonly) UITableView *tableView;
 
--(id)initWithStyle:(UITableViewStyle)style;
--(id)initWithStyle:(UITableViewStyle)style infoPanelSize:(CGSize)size;
+- (id)initWithStyle:(UITableViewStyle)style;
+
+- (id)initWithStyle:(UITableViewStyle)style infoPanelSize:(CGSize)size;
 
 // Override these
--(void)infoPanelWillAppear:(UIScrollView*)scrollView;
--(void)infoPanelDidAppear:(UIScrollView*)scrollView;
--(void)infoPanelWillDisappear:(UIScrollView*)scrollView;
--(void)infoPanelDidDisappear:(UIScrollView*)scrollView;
--(void)infoPanelDidScroll:(UIScrollView*)scrollView atPoint:(CGPoint)point;
--(void)infoPanelDidStopScrolling:(UIScrollView*)scrollView;
+- (void)infoPanelWillAppear:(UIScrollView *)scrollView;
+
+- (void)infoPanelDidAppear:(UIScrollView *)scrollView;
+
+- (void)infoPanelWillDisappear:(UIScrollView *)scrollView;
+
+- (void)infoPanelDidDisappear:(UIScrollView *)scrollView;
+
+- (void)infoPanelDidScroll:(UIScrollView *)scrollView atPoint:(CGPoint)point;
+
+- (void)infoPanelDidStopScrolling:(UIScrollView *)scrollView;
 
 @end

@@ -32,6 +32,8 @@
 		D82F9D0D15D4118F00A92BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D82F9D0B15D4118F00A92BBD /* InfoPlist.strings */; };
 		D82F9D1315D411A800A92BBD /* KNTableOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 376B0D2614BF1C6A0049756D /* KNTableOverlay.png */; };
 		D82F9D1415D411A800A92BBD /* KNTableOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 376B0D2714BF1C6A0049756D /* KNTableOverlay@2x.png */; };
+		D82F9E1315D43BD000A92BBD /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82F9E1015D43BD000A92BBD /* ECSlidingViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D82F9E1415D43BD000A92BBD /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = D82F9E1215D43BD000A92BBD /* UIImage+ImageWithUIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,6 +87,10 @@
 		D82F9D0A15D4118F00A92BBD /* KNPathTableViewResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KNPathTableViewResources-Info.plist"; sourceTree = "<group>"; };
 		D82F9D0C15D4118F00A92BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D82F9D0E15D4118F00A92BBD /* KNPathTableViewResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KNPathTableViewResources-Prefix.pch"; sourceTree = "<group>"; };
+		D82F9E0F15D43BD000A92BBD /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		D82F9E1015D43BD000A92BBD /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		D82F9E1115D43BD000A92BBD /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		D82F9E1215D43BD000A92BBD /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,7 @@
 		376B0D2314BF1C6A0049756D /* KNPathTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D82F9E0E15D43BD000A92BBD /* ECSlidingViewController */,
 				376B0D2414BF1C6A0049756D /* KNPathTableViewController.h */,
 				376B0D2514BF1C6A0049756D /* KNPathTableViewController.m */,
 				376B0D2614BF1C6A0049756D /* KNTableOverlay.png */,
@@ -262,6 +269,18 @@
 				D82F9D0E15D4118F00A92BBD /* KNPathTableViewResources-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D82F9E0E15D43BD000A92BBD /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D82F9E0F15D43BD000A92BBD /* ECSlidingViewController.h */,
+				D82F9E1015D43BD000A92BBD /* ECSlidingViewController.m */,
+				D82F9E1115D43BD000A92BBD /* UIImage+ImageWithUIView.h */,
+				D82F9E1215D43BD000A92BBD /* UIImage+ImageWithUIView.m */,
+			);
+			name = ECSlidingViewController;
+			path = ../../ECSlidingViewController/ECSlidingViewController/Vendor/ECSlidingViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +413,8 @@
 			files = (
 				D82F9C7315D406C800A92BBD /* KNPathTableViewStaticLibrary.m in Sources */,
 				D82F9C7715D406E900A92BBD /* KNPathTableViewController.m in Sources */,
+				D82F9E1315D43BD000A92BBD /* ECSlidingViewController.m in Sources */,
+				D82F9E1415D43BD000A92BBD /* UIImage+ImageWithUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +635,7 @@
 				D82F9D1015D4118F00A92BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
