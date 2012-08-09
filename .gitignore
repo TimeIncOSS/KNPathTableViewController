@@ -10,3 +10,4 @@ build/revision
 *.xcodeproj/*.xcuserstate
 *.tmproj
 .DS_Store
+.idea
