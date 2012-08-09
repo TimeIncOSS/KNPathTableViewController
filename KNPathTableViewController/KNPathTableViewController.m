@@ -103,7 +103,7 @@
       [self infoPanelDidAppear:scrollView];
     }];
 	}
-  
+
   // If it is waiting to fade out, then maintain position
   else if ([__infoPanel superview] == self.view) {
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(slideOutInfoPanel) object:nil];

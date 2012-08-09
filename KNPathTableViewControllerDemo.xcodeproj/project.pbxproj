@@ -24,7 +24,28 @@
 		376B0D2A14BF1C6A0049756D /* KNTableOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 376B0D2714BF1C6A0049756D /* KNTableOverlay@2x.png */; };
 		376B0D2E14BF1D400049756D /* KNFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376B0D2D14BF1D3F0049756D /* KNFirstViewController.m */; };
 		376B0D3814BF54F80049756D /* KNThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376B0D3714BF54F80049756D /* KNThirdViewController.m */; };
+		D82F9C6C15D406C800A92BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376B0CF214BF18800049756D /* Foundation.framework */; };
+		D82F9C7115D406C800A92BBD /* KNPathTableViewStaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D82F9C7015D406C800A92BBD /* KNPathTableViewStaticLibrary.h */; };
+		D82F9C7315D406C800A92BBD /* KNPathTableViewStaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = D82F9C7215D406C800A92BBD /* KNPathTableViewStaticLibrary.m */; };
+		D82F9C7715D406E900A92BBD /* KNPathTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376B0D2514BF1C6A0049756D /* KNPathTableViewController.m */; };
+		D82F9D0715D4118F00A92BBD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82F9D0615D4118F00A92BBD /* CoreFoundation.framework */; };
+		D82F9D0D15D4118F00A92BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D82F9D0B15D4118F00A92BBD /* InfoPlist.strings */; };
+		D82F9D1315D411A800A92BBD /* KNTableOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 376B0D2614BF1C6A0049756D /* KNTableOverlay.png */; };
+		D82F9D1415D411A800A92BBD /* KNTableOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 376B0D2714BF1C6A0049756D /* KNTableOverlay@2x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D82F9C6915D406C800A92BBD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				D82F9C7115D406C800A92BBD /* KNPathTableViewStaticLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		376B0CEC14BF18800049756D /* KNPathTableViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNPathTableViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +73,18 @@
 		376B0D2D14BF1D3F0049756D /* KNFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFirstViewController.m; sourceTree = "<group>"; };
 		376B0D3614BF54F80049756D /* KNThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNThirdViewController.h; sourceTree = "<group>"; };
 		376B0D3714BF54F80049756D /* KNThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNThirdViewController.m; sourceTree = "<group>"; };
+		D82F9C5E15D4069C00A92BBD /* KNPathTableViewControllerStaticLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KNPathTableViewControllerStaticLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		D82F9C5F15D4069C00A92BBD /* KNPathTableViewControllerStaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNPathTableViewControllerStaticLibrary.h; sourceTree = "<group>"; };
+		D82F9C6115D4069C00A92BBD /* KNPathTableViewControllerStaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNPathTableViewControllerStaticLibrary.m; sourceTree = "<group>"; };
+		D82F9C6B15D406C800A92BBD /* libKNPathTableViewStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKNPathTableViewStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82F9C6F15D406C800A92BBD /* KNPathTableViewStaticLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KNPathTableViewStaticLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		D82F9C7015D406C800A92BBD /* KNPathTableViewStaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNPathTableViewStaticLibrary.h; sourceTree = "<group>"; };
+		D82F9C7215D406C800A92BBD /* KNPathTableViewStaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNPathTableViewStaticLibrary.m; sourceTree = "<group>"; };
+		D82F9D0515D4118F00A92BBD /* KNPathTableViewResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNPathTableViewResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82F9D0615D4118F00A92BBD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D82F9D0A15D4118F00A92BBD /* KNPathTableViewResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KNPathTableViewResources-Info.plist"; sourceTree = "<group>"; };
+		D82F9D0C15D4118F00A92BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D82F9D0E15D4118F00A92BBD /* KNPathTableViewResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KNPathTableViewResources-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +98,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D82F9C6815D406C800A92BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82F9C6C15D406C800A92BBD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82F9D0215D4118F00A92BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82F9D0715D4118F00A92BBD /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +122,9 @@
 			children = (
 				376B0D2314BF1C6A0049756D /* KNPathTableViewController */,
 				376B0CF614BF18800049756D /* KNPathTableViewControllerDemo */,
+				D82F9C5C15D4069C00A92BBD /* KNPathTableViewControllerStaticLibrary */,
+				D82F9C6D15D406C800A92BBD /* KNPathTableViewStaticLibrary */,
+				D82F9D0815D4118F00A92BBD /* KNPathTableViewResources */,
 				376B0CEF14BF18800049756D /* Frameworks */,
 				376B0CED14BF18800049756D /* Products */,
 			);
@@ -82,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				376B0CEC14BF18800049756D /* KNPathTableViewControllerDemo.app */,
+				D82F9C6B15D406C800A92BBD /* libKNPathTableViewStaticLibrary.a */,
+				D82F9D0515D4118F00A92BBD /* KNPathTableViewResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +146,7 @@
 				376B0CF014BF18800049756D /* UIKit.framework */,
 				376B0CF214BF18800049756D /* Foundation.framework */,
 				376B0CF414BF18800049756D /* CoreGraphics.framework */,
+				D82F9D0615D4118F00A92BBD /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +210,60 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		D82F9C5C15D4069C00A92BBD /* KNPathTableViewControllerStaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D82F9C5F15D4069C00A92BBD /* KNPathTableViewControllerStaticLibrary.h */,
+				D82F9C6115D4069C00A92BBD /* KNPathTableViewControllerStaticLibrary.m */,
+				D82F9C5D15D4069C00A92BBD /* Supporting Files */,
+			);
+			path = KNPathTableViewControllerStaticLibrary;
+			sourceTree = "<group>";
+		};
+		D82F9C5D15D4069C00A92BBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D82F9C5E15D4069C00A92BBD /* KNPathTableViewControllerStaticLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D82F9C6D15D406C800A92BBD /* KNPathTableViewStaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D82F9C7015D406C800A92BBD /* KNPathTableViewStaticLibrary.h */,
+				D82F9C7215D406C800A92BBD /* KNPathTableViewStaticLibrary.m */,
+				D82F9C6E15D406C800A92BBD /* Supporting Files */,
+			);
+			path = KNPathTableViewStaticLibrary;
+			sourceTree = "<group>";
+		};
+		D82F9C6E15D406C800A92BBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D82F9C6F15D406C800A92BBD /* KNPathTableViewStaticLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D82F9D0815D4118F00A92BBD /* KNPathTableViewResources */ = {
+			isa = PBXGroup;
+			children = (
+				D82F9D0915D4118F00A92BBD /* Supporting Files */,
+			);
+			path = KNPathTableViewResources;
+			sourceTree = "<group>";
+		};
+		D82F9D0915D4118F00A92BBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D82F9D0A15D4118F00A92BBD /* KNPathTableViewResources-Info.plist */,
+				D82F9D0B15D4118F00A92BBD /* InfoPlist.strings */,
+				D82F9D0E15D4118F00A92BBD /* KNPathTableViewResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +283,40 @@
 			productName = KNPathTableViewControllerDemo;
 			productReference = 376B0CEC14BF18800049756D /* KNPathTableViewControllerDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D82F9C6A15D406C800A92BBD /* KNPathTableViewStaticLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82F9C7415D406C800A92BBD /* Build configuration list for PBXNativeTarget "KNPathTableViewStaticLibrary" */;
+			buildPhases = (
+				D82F9C6715D406C800A92BBD /* Sources */,
+				D82F9C6815D406C800A92BBD /* Frameworks */,
+				D82F9C6915D406C800A92BBD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KNPathTableViewStaticLibrary;
+			productName = KNPathTableViewStaticLibrary;
+			productReference = D82F9C6B15D406C800A92BBD /* libKNPathTableViewStaticLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D82F9D0415D4118F00A92BBD /* KNPathTableViewResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82F9D1115D4118F00A92BBD /* Build configuration list for PBXNativeTarget "KNPathTableViewResources" */;
+			buildPhases = (
+				D82F9D0115D4118F00A92BBD /* Sources */,
+				D82F9D0215D4118F00A92BBD /* Frameworks */,
+				D82F9D0315D4118F00A92BBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KNPathTableViewResources;
+			productName = KNPathTableViewResources;
+			productReference = D82F9D0515D4118F00A92BBD /* KNPathTableViewResources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,6 +340,8 @@
 			projectRoot = "";
 			targets = (
 				376B0CEB14BF18800049756D /* KNPathTableViewControllerDemo */,
+				D82F9C6A15D406C800A92BBD /* KNPathTableViewStaticLibrary */,
+				D82F9D0415D4118F00A92BBD /* KNPathTableViewResources */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +362,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D82F9D0315D4118F00A92BBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82F9D0D15D4118F00A92BBD /* InfoPlist.strings in Resources */,
+				D82F9D1315D411A800A92BBD /* KNTableOverlay.png in Resources */,
+				D82F9D1415D411A800A92BBD /* KNTableOverlay@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -230,6 +385,22 @@
 				376B0D2814BF1C6A0049756D /* KNPathTableViewController.m in Sources */,
 				376B0D2E14BF1D400049756D /* KNFirstViewController.m in Sources */,
 				376B0D3814BF54F80049756D /* KNThirdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82F9C6715D406C800A92BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82F9C7315D406C800A92BBD /* KNPathTableViewStaticLibrary.m in Sources */,
+				D82F9C7715D406E900A92BBD /* KNPathTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82F9D0115D4118F00A92BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +421,14 @@
 				376B0D1414BF18800049756D /* en */,
 			);
 			name = KNSecondViewController.xib;
+			sourceTree = "<group>";
+		};
+		D82F9D0B15D4118F00A92BBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D82F9D0C15D4118F00A92BBD /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -322,6 +501,82 @@
 			};
 			name = Release;
 		};
+		D82F9C7515D406C800A92BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/KNPathTableViewStaticLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KNPathTableViewStaticLibrary/KNPathTableViewStaticLibrary-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D82F9C7615D406C800A92BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/KNPathTableViewStaticLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KNPathTableViewStaticLibrary/KNPathTableViewStaticLibrary-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D82F9D0F15D4118F00A92BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KNPathTableViewResources/KNPathTableViewResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "KNPathTableViewResources/KNPathTableViewResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D82F9D1015D4118F00A92BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KNPathTableViewResources/KNPathTableViewResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "KNPathTableViewResources/KNPathTableViewResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -342,6 +597,23 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D82F9C7415D406C800A92BBD /* Build configuration list for PBXNativeTarget "KNPathTableViewStaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82F9C7515D406C800A92BBD /* Debug */,
+				D82F9C7615D406C800A92BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82F9D1115D4118F00A92BBD /* Build configuration list for PBXNativeTarget "KNPathTableViewResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82F9D0F15D4118F00A92BBD /* Debug */,
+				D82F9D1015D4118F00A92BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
