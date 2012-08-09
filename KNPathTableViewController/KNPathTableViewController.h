@@ -22,9 +22,9 @@
 
 #define KNPathTableFadeInDuration         0.3
 #define KNPathTableFadeOutDuration        0.3
-#define KNPathTableFadeOutDelay           0.5
+#define KNPathTableFadeOutDelay           0.3
 #define KNPathTableSlideInOffset         16.0
-#define KNPathTableOverlayDefaultSize    CGSizeMake(150, 32)
+#define KNPathTableOverlayDefaultSize    CGSizeMake(100, 32)
 
 @interface KNPathTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     UIView *__infoPanel;
