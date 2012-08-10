@@ -9,6 +9,7 @@
 #import "KNPathTableViewController.h"
 #import "ECSlidingViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface KNPathTableViewController (private)
 - (void)moveInfoPanelToSuperView;
@@ -24,6 +25,8 @@
 
 @synthesize infoPanel = __infoPanel;
 @synthesize tableView = __tableView;
+@synthesize infoPanelSize = __infoPanelSize;
+
 
 #pragma mark - Custom init
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -64,6 +67,7 @@
 
     // Initialize overlay panel with stretchable background
     UIImageView *bg = [[UIImageView alloc] initWithFrame:__infoPanel.bounds];
+    bg.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     UIImage *overlay = [UIImage imageNamed:@"KNTableOverlay"];
     bg.image = [overlay stretchableImageWithLeftCapWidth:overlay.size.width / 2.0 topCapHeight:overlay.size.height / 2.0];
     [__infoPanel setAlpha:0];
@@ -79,17 +83,23 @@
 
 #pragma mark - Meant to be override
 
-- (void)infoPanelWillAppear:(UIScrollView *)scrollView {}
+- (void)infoPanelWillAppear:(UIScrollView *)scrollView {
+}
 
-- (void)infoPanelDidAppear:(UIScrollView *)scrollView {}
+- (void)infoPanelDidAppear:(UIScrollView *)scrollView {
+}
 
-- (void)infoPanelWillDisappear:(UIScrollView *)scrollView {}
+- (void)infoPanelWillDisappear:(UIScrollView *)scrollView {
+}
 
-- (void)infoPanelDidDisappear:(UIScrollView *)scrollView {}
+- (void)infoPanelDidDisappear:(UIScrollView *)scrollView {
+}
 
-- (void)infoPanelDidScroll:(UIScrollView *)scrollView atPoint:(CGPoint)point {}
+- (void)infoPanelDidScroll:(UIScrollView *)scrollView atPoint:(CGPoint)point {
+}
 
-- (void)infoPanelDidStopScrolling:(UIScrollView *)scrollView {}
+- (void)infoPanelDidStopScrolling:(UIScrollView *)scrollView {
+}
 
 #pragma mark - Scroll view delegate
 
@@ -105,6 +115,8 @@
 
         // Prepare to slide in
         CGRect f = __infoPanel.frame;
+//        f.origin.x = __infoPanel.superview.bounds.size.width - f.size.width - KNPathTableSlideInOffset;
+
         CGRect f2 = f;
         f2.origin.x += KNPathTableSlideInOffset;
         [__infoPanel setFrame:f2];
@@ -218,6 +230,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 }
+
+
+//- (void)setInfoPanelSize:(CGSize)anInfoPanelSize {
+//    __infoPanelSize = anInfoPanelSize;
+//    CGRect rect = __infoPanelInitialFrame;
+//    rect.size = __infoPanelSize;
+//    __infoPanelInitialFrame = rect;
+//}
+
 
 #pragma mark - Used to be dealloc here
 
